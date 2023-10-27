@@ -1,3 +1,4 @@
+import math
 
 class Planet:
     " En klasse for å beskrive en planet"
@@ -7,6 +8,8 @@ class Planet:
         self.solavstand=solavstand
         self.radius = radius
         self.antallRinger=antallRinger
+    def volum():
+        return (4/3)*math.pi*self.radius**3
 
 jorda = Planet( "Jorda", 152, 6371)
 mars = Planet("Mars",227.9,3389.5)
@@ -25,7 +28,7 @@ print(jupiter.solavstand)
 # Prøv å skriv ut de andre attributtene til klassen
 print(jorda)
 print(jorda.navn)
-print(jorda.antallringer)
+print(jorda.antallRinger)
 # OBS: pass på rekkefølgen i argumentene til konstruktøren.
 
 
